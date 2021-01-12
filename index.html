@@ -29,6 +29,20 @@
         </div>
       </div>
     </div>
+
+    <div class="sl-footer">
+      <!-- FONT AWESOME ICONS -->
+      <a class="footer-icon"></a>
+      <a class="footer-icon" href="https://www.linkedin.com/in/stephenleey/">
+        <img id="linkedin_svg" src="Resources/linkedin-in-brands.svg"/>
+      </a>
+      <a class="footer-icon" href="mailto:stephensl0118@gmail.com">
+        <img id="email_svg" src="Resources/envelope-solid.svg"/>
+      </a>
+      <a class="footer-icon" href="https://github.com/StephenLeeY/ButtonMash">
+        <img id="github_svg" src="Resources/github-brands.svg"/>
+      </a>
+    </div>
   </body>
 
   <!-- JAVASCRIPT -->
@@ -58,7 +72,7 @@
         counter = (prev_key === event.key) ? counter + 1 : 1;
         counter_div.innerText = counter;
 
-        prev_key = event.key;
+        prev_key = (event.keyCode === 32) ? 'Space' : event.key;
         prev_key_div.innerText = prev_key;
 
         if(counter === 1) {
